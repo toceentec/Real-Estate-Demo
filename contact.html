@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="custom.css"/>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        .map {
+            flex: 2;
+            border-right: 1px solid #ddd;
+        }
+        .map iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+        .contact-info {
+            flex: 1;
+            padding: 20px;
+        }
+        .contact-info h3 {
+            margin-top: 0;
+            color: #241e34;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .office-location {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .office-location h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #241e34;
+        }
+        .office-location div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .office-location p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .contact-gif {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-gif img {
+            width: 150px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        .footer {
+            text-align: center;
+            border-top: 1px solid #ddd;
+            padding: 20px;
+            background-color: #f1f1f1;
+            box-sizing: border-box;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <img src="./images/logo.png" alt="Beautiful Real Estate Logo" class="logo"/>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#listings">Listings</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Our Affiliate</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <div class="header-placeholder"></div>      
+
+    <div class="container">
+        <div class="contact-gif">
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTh3b3dmMWxkajd5dW9yaTJvN2E4d3k4NDhjYmNzMnBiMXg3NHV6aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KCpK92XQHCutWBUz3W/giphy.webp" alt="Pointing Character">
+        </div>
+        <div class="contact-section">
+            <div class="map" id="map">
+                <!-- Google Map Embed Code -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.225045444724!2d-122.41941548468157!3d37.77492927975908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c2318d9fb%3A0xfedc9e7e69f8d3ec!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1625646872923!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact-info">
+                <h3>For Inquiries Contact:</h3>
+                <p>Name: John Doe</p>
+                <p>Address: 123 Main Street, Hometown, USA</p>
+                <p>Phone: (555) 123-4567</p>
+                <h3>Client Service</h3>
+                <p>Name: Jane Smith</p>
+                <p>Phone: (555) 987-6543</p>
+                <p>Phone: (555) 876-5432</p>
+                <p>Phone: (555) 765-4321</p>
+                <p>Phone: (555) 654-3210</p>
+            </div>
+        </div>
+
+        <div class="office-location">
+            <h3>Office Location</h3>
+            <div>
+                <p>Name: ABC Real Estate</p>
+                <p>Address: 456 Elm Street, Anytown, USA</p>
+                <p>Address: 789 Oak Street, Yourtown, USA</p>
+                <p>Address: 101 Pine Street, Theirtown, USA</p>
+            </div>
+            <div>
+                <p>Phone: (555) 321-4321</p>
+                <p>Email: contact@abcrealestate.com</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-left">
+              <img src="./images/logo.png" alt="Beautiful Real Estate Logo" class="logo"/>
+              <p>DIRICHI COOPERATIVE GROUP</p>
+              <p>Motto: "Your dream home awaits"</p>
+            </div>
+            <div class="footer-middle">
+              <p>Email: info@dirichicooperative.com</p>
+              <p>Phone: +1234567890</p>
+              <p>Phone: +0987654321</p>
+              <p>Phone: +1122334455</p>
+              <p>Phone: +6677889900</p>
+            </div>
+            <div class="footer-right">
+              <ul>
+                <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#Our-Affiliate">Our Affiliate</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">Frequently Asked Questions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Beautiful Real Estate. All rights reserved.</p>
+          <div class="footer-social">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
